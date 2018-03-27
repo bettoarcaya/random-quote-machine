@@ -7,12 +7,14 @@
   <title>Random quote machine</title>
   <link rel="stylesheet" href="style.scss">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="script.js"></script>
 </head>
 <body>
 
   <section>
     <div class="quote-container">
+      <h1>Random quote machine</h1>
       <div class="text">
         <i class="fa fa-quote-left"> </i><span id="text"></span>  
       </div>
@@ -22,7 +24,11 @@
       </div>
 
       <div class="buttons">
-        <button class="button" id="new">New quote</button>
+        <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
+          <i class="fa fa-twitter" aria-hidden="true"><span></span> </i>
+        </a>
+        <button class="button" id="new"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        <button class="button" id="previus"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
       </div>
     </div>
   </section>
@@ -33,24 +39,3 @@
 
 </body>
 </html>
-
-
-
-<!--div class="quote-box">
-  <div class="quote-text">
-    <i class="fa fa-quote-left"> </i><span id="text"></span>
-  </div>
-  <div class="quote-author">
-    - <span id="author"></span>
-  </div>
-  <div class="buttons">
-    <a class="button" id="tweet-quote" title="Tweet this quote!" target="_blank">
-      <i class="fa fa-twitter"></i>
-    </a>
-     <a class="button" id="tumblr-quote" title="Post this quote on tumblr!" target="_blank">
-      <i class="fa fa-tumblr"></i>
-    </a>
-    <button class="button" id="new-quote">New quote</button>
-  </div>
-</div>
-<div class="footer"> by <a href="http://codepen.io/hezag/">Humberto Arcaya</a></div-->
